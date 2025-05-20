@@ -298,21 +298,22 @@ function mesmerize_print_hero( $inner = false ) {
 		do_action( "mesmerize_print_hero_content_{$content}" );
 	} else {
 		?>
-<div class="header-wrapper">
-   <div <?php echo mesmerize_header_background_attrs() ?>>
-      <?php do_action( 'mesmerize_before_header_background' ); ?>
-      <?php mesmerize_print_video_container(); ?>
-      <?php mesmerize_print_front_page_header_content(); ?>
+			<div class="header-wrapper">
+				<div <?php echo mesmerize_header_background_attrs() ?>>
+					<?php do_action( 'mesmerize_before_header_background' ); ?>
+					<?php mesmerize_print_video_container(); ?>
+					<!-- <?php mesmerize_print_front_page_header_content(); ?> -->
+					 
 
-      <?php
-				mesmerize_print_header_separator( 'header' );
-				?>
-      <?php
-				do_action( 'mesmerize_after_header_content' );
-				?>
-   </div>
-</div>
-<?php
+					<?php
+								mesmerize_print_header_separator( 'header' );
+								?>
+					<?php
+								do_action( 'mesmerize_after_header_content' );
+								?>
+				</div>
+			</div>
+		<?php
 	}
 }
 
