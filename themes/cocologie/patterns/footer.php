@@ -52,7 +52,7 @@
 				<!-- /wp:navigation -->
 
 				<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"}} -->
-					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Events', 'twentytwentyfive' ); ?>","url":"#"} /-->
+					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Event', 'twentytwentyfive' ); ?>","url":"#"} /-->
 
 					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Shop', 'twentytwentyfive' ); ?>","url":"#"} /-->
 
