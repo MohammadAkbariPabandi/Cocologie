@@ -9,3 +9,417 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: my-blank-theme
 */
+
+/* variable ---------------------------------------------------------------------------- */
+@font-face { 
+font-family: Cera Pro;
+src: url(./fonts/Cera-Pro-Medium.woff);
+}
+
+@font-face {
+  font-family: Cera Pro;
+  src: url(./fonts/Cera-Pro-Bold.woff);
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+}
+
+:root {
+  --Midnight: #111111;
+  --Merlot: #7F1F36;
+  --Maroon: #B73750;
+  --Zodiac: #132554;
+  --Tory: #1651A5 ;
+  --PastelBlue: #A5C3F2 ;
+  --White: #FFFFFF ;
+  --LightPastelBlue: #EEF2FB ;
+  --LightMerlot:rgba(127, 31, 54, 0.15);;
+  }
+
+  
+/* button ---------------------------------------------------------------------- */
+.Button{
+  display: inline-flex;
+  height: 56px;
+  padding: 0px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  font-family: "Cera Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; 
+}
+.MidnightButton { 
+  border: 1.5px solid var(--Midnight);
+  background: var(--Midnight);
+  color: var(--White);
+}
+.LightMidnightButton {
+  border: 1.5px solid var(--Midnight);
+  background: var(--White);
+  color: var(--Midnight);
+}
+.MerlotButton {
+  border: 1.5px solid var(--Merlot);
+  background: var(--Merlot);
+  color: var(--White);
+}
+
+.MerlotButton:hover{
+  background: var(--White);
+  color: var(--Merlot);
+}
+
+.LightMerlotButton {
+  border: 1.5px solid var(--Merlot);
+  background: var(--White);
+  color: var(--Merlot);
+}
+.MaroonButton {
+  border: 1.5px solid var(--Maroon);
+  background: var(--Maroon);
+  color: var(--White);
+}
+
+.MaroonButton:hover{
+  background: var(--White);
+  color: var(--Maroon);
+}
+
+.LightMaroonButton {
+  border: 1.5px solid var(--Maroon);
+  background: var(--White);
+  color: var(--Maroon);
+}
+.ZodiacButton {
+  border: 1.5px solid var(--Zodiac);
+  background: var(--Zodiac);
+  color: var(--White);
+}
+
+.ZodiacButton:hover{
+  background: var(--White);
+  color: var(--Zodiac);
+}
+.ZodiacButton:hover svg path{
+fill : var(--Zodiac)
+}
+.LightZodiacButton {
+  border: 1.5px solid var(--Zodiac);
+  background: var(--White);
+  color: var(--Zodiac);
+}
+.LightZodiacButton:hover{
+  background: var(--Zodiac);
+  color: var(--White);
+}
+.ToryButton {
+  border: 1.5px solid var(--Tory);
+  background: var(--Tory);
+  color: var(--White);
+}
+
+.ToryButton:hover{
+  background: var(--White);
+  color: var(--Tory);
+}
+
+.LightToryButton {
+  border: 1.5px solid var(--Tory);
+  background: var(--White);
+  color: var(--Tory);
+}
+.PastelBlueButton {
+  border: 1.5px solid var(--PastelBlue);
+  background: var(--PastelBlue);
+  color: var(--White);
+}
+.LightPastelBlueButton {
+  border: 1.5px solid var(--PastelBlue);
+  background: var(--White);
+  color: var(--PastelBlue);
+}
+.WhiteButton {
+  border: 1.5px solid var(--White);
+  background: var(--White);
+  color: var(--Zodiac);
+}
+
+.WhiteButton:hover{
+  background: none;
+  color: var(--White);
+}
+
+.LightWhiteButton {
+  border: 1.5px solid var(--Zodiac); 
+  color: var(--Zodiac);
+}
+.PillButton{
+  display: inline-flex;
+  height: 45px;
+  padding: 25px 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.MerlotPillButton{
+  border: none;
+  border-radius: 100px;
+  background: var(--Merlot);
+  color: var(--White);
+}
+.MerlotLightPillButton{
+  border: none;
+  border-radius: 100px;
+  background: var(--LightMerlot);
+  color: var(--Merlot);
+}
+.MaroonPillButton{
+  border: none;
+  border-radius: 100px;
+  background: var(--Maroon);
+  color: var(--White);
+}
+.ZodiacPillButton{
+  border: none;
+  border-radius: 100px;
+  background: var(--Zodiac);
+  color: var(--White);
+}
+.ToryPillButton{
+  border: none;
+  border-radius: 100px;
+  background: var(--Tory);
+  color: var(--White);
+}
+.PastelBluePillButton{
+  border: none;
+  border-radius: 100px;
+  background: var(--PastelBlue);
+  color: var(--White);
+}
+.LightMerlotPillButton{
+  border: none;
+  border-radius: 100px;
+  background: rgba(127, 31, 54, 0.15);
+  color: var(--Merlot);
+}
+.DarkMerlotPillButton{
+  border: none;
+  border-radius: 100px;
+  background: rgba(127, 31, 54, 0.30);   
+  color: var(--Merlot);  
+}
+.GrayPillButton {
+  display: flex;
+  height: 56px;
+  padding: 0px 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background: rgba(19, 37, 84, 0.15);
+  color: var(--Zodiac);
+  border: none;
+}
+
+/* Typography --------------------------------------------------------------------------------------------Typography */
+h1{
+  font-family: "Cera Pro";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--Zodiac);
+}
+h2{
+  font-family: "Cera Pro";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: #132554;
+}
+h3{
+  font-family: "Cera Pro";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--Zodiac);
+}
+h4{
+  font-family: "Cera Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--Zodiac);
+}
+h5{
+  font-family: "Cera Pro";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--Zodiac);
+}
+h6{
+  font-family: "Cera Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  color: var(--Zodiac);
+}
+.body-large{
+  font-family: "Cera Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--Midnight);
+}
+.body-base{
+  font-family: "Cera Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--Midnight);
+}
+.body-small{
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--Midnight);
+}
+.footertext{
+    padding-bottom: 60px;
+    border-bottom: #D6DADC 1px solid;
+}
+
+
+
+/* header  --------------------------------------------------------------------------------------------- header */
+
+/* Basic Reset */
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.header-content {
+  /* max-width: 1200px;
+  margin: 0 auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-title img {
+  width: 40px;
+  height: 40px;
+}
+
+.site-title a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+.desktop-menu ul{
+  display: flex;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+}
+.desktop-menu ul li{
+  margin-inline: 10px;
+}
+.desktop-menu ul li a {
+  color: var(--White);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Popup overlay menu */
+.popup-menu {
+  position: fixed;
+  top: 45px;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.95);
+  display: none;
+  flex-direction: column;
+  padding-top: 120px;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-menu ul{
+  list-style: none;
+  text-align: center;
+}
+
+.popup-menu ul li {
+  margin: 2rem 0;
+}
+
+.popup-menu ul li a {
+  color: var(--White);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.popup-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 4rem;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+}
