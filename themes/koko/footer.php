@@ -1,5 +1,6 @@
 <footer>
-    <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+  
+  <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
 </footer>
 
 <script>

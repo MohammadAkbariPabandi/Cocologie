@@ -12,13 +12,13 @@ Text Domain: my-blank-theme
 
 /* variable ---------------------------------------------------------------------------- */
 @font-face { 
-font-family: Cera Pro;
-src: url(./fonts/Cera-Pro-Medium.woff);
+  font-family: Cera Pro;
+  src: url(./font/webfonts/Vazirmatn-Black.woff2);
 }
 
 @font-face {
   font-family: Cera Pro;
-  src: url(./fonts/Cera-Pro-Bold.woff);
+  src: url(./font/ttf/Vazirmatn-Bold.ttf);
   font-weight: bold;
 }
 
@@ -27,16 +27,19 @@ a{
 }
 
 :root {
-  --Midnight: #111111;
+  --Midnight: #000000;
   --Merlot: #7F1F36;
   --Maroon: #B73750;
-  --Zodiac: #132554;
+  --Zodiac: #3b3340;
   --Tory: #1651A5 ;
-  --PastelBlue: #A5C3F2 ;
+  --PastelBlue: #6a5e72 ;
   --White: #FFFFFF ;
   --LightPastelBlue: #EEF2FB ;
   --LightMerlot:rgba(127, 31, 54, 0.15);;
-  }
+}
+body{
+  direction: rtl;
+}
 
   
 /* button ---------------------------------------------------------------------- */
@@ -241,7 +244,6 @@ h1{
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  color: var(--Zodiac);
 }
 h2{
   font-family: "Cera Pro";
@@ -249,7 +251,6 @@ h2{
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  color: #132554;
 }
 h3{
   font-family: "Cera Pro";
@@ -257,7 +258,6 @@ h3{
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  color: var(--Zodiac);
 }
 h4{
   font-family: "Cera Pro";
@@ -265,7 +265,6 @@ h4{
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  color: var(--Zodiac);
 }
 h5{
   font-family: "Cera Pro";
@@ -273,7 +272,6 @@ h5{
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  color: var(--Zodiac);
 }
 h6{
   font-family: "Cera Pro";
@@ -281,7 +279,6 @@ h6{
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
-  color: var(--Zodiac);
 }
 .body-large{
   font-family: "Cera Pro";
@@ -289,7 +286,6 @@ h6{
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
-  color: var(--Midnight);
 }
 .body-base{
   font-family: "Cera Pro";
@@ -297,7 +293,6 @@ h6{
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  color: var(--Midnight);
 }
 .body-small{
   font-family: "Cera Pro";
@@ -305,12 +300,8 @@ h6{
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  color: var(--Midnight);
 }
-.footertext{
-    padding-bottom: 60px;
-    border-bottom: #D6DADC 1px solid;
-}
+
 
 
 
@@ -319,9 +310,8 @@ h6{
 /* Basic Reset */
 
 header {
-  background-color: #333;
+  background-color: var(--PastelBlue);
   color: white;
-  padding: 1rem;
 }
 
 .header-content {
@@ -422,4 +412,93 @@ header {
   nav {
     display: none;
   }
+}
+
+
+
+/* heroSection ----------------------------------------------------------------------- heroSection */
+
+
+.herosection-left{
+  background-image: url(images/graph01.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.herosection-right{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-block: 120px;
+}
+
+
+
+
+
+
+/* post card  ----------------------------------------------------------------------------- post card  */
+
+.posts-cards{
+  margin-block: 100px;
+}
+.posts-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.post-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-card-content {
+    padding: 15px;
+}
+
+.post-card-content h3 {
+    margin-top: 0;
+}
+
+.post-card-content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer  ------------------------------------------------------------------------------ footer */
+
+footer{
+  background-image: url(images/footerBackground01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
 }

@@ -34,7 +34,7 @@
         <li><a href="#">پکیج ها</a></li>
         <li><a href="#">درباره ما</a></li>
         <li><a href="#">ارتباط با ما</a></li>
-        <li><a class="PillButton ToryPillButton" href="#">درخواست ثبت نام</a></li>
+        <li><a class="PillButton ZodiacPillButton" href="#">درخواست ثبت نام</a></li>
       </ul>
     </nav>
   </div>
@@ -49,7 +49,7 @@
     <li><a href="#">پکیج ها</a></li>
     <li><a href="#">درباره ما</a></li>
     <li><a href="#">ارتباط با ما</a></li>
-    <li><a class="PillButton ToryPillButton" href="#">درخواست ثبت نام</a></li>
+    <li><a class="PillButton ZodiacPillButton" href="#">درخواست ثبت نام</a></li>
   </ul>
   <div class="logo-title mt-5">
       <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Kokology Logo">
