@@ -5570,6 +5570,7 @@ a.text-logo, a.text-logo:visited, a.text-logo:hover {
   background-size: cover;
   position: relative;
   z-index: 0;
+  height: 100vh;
 }
 
 h1.hero-title {

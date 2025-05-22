@@ -1,0 +1,30 @@
+[22-May-2025 07:22:09 UTC] PHP Warning:  wp_version_check(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\Harry\Local Sites\cocologie\app\public\wp-includes\functions.php on line 6121
+[22-May-2025 07:22:09 UTC] PHP Warning:  wp_version_check(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\Harry\Local Sites\cocologie\app\public\wp-includes\functions.php on line 6121
+[22-May-2025 07:22:09 UTC] PHP Warning:  wp_version_check(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\Harry\Local Sites\cocologie\app\public\wp-includes\functions.php on line 6121
+[22-May-2025 07:26:57 UTC] Automatic updates starting...
+[22-May-2025 07:26:59 UTC] PHP Warning:  wp_update_plugins(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\Harry\Local Sites\cocologie\app\public\wp-includes\functions.php on line 6121
+[22-May-2025 07:27:05 UTC] PHP Warning:  wp_update_themes(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\Harry\Local Sites\cocologie\app\public\wp-includes\functions.php on line 6121
+[22-May-2025 07:27:07 UTC] PHP Warning:  wp_update_plugins(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\Harry\Local Sites\cocologie\app\public\wp-includes\functions.php on line 6121
+[22-May-2025 07:27:17 UTC] Automatic updates complete.
+[22-May-2025 07:27:27 UTC] PHP Warning:  wp_update_plugins(): An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\Harry\Local Sites\cocologie\app\public\wp-includes\functions.php on line 6121
+[22-May-2025 14:11:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "title" in C:\Users\Harry\Local Sites\cocologie\app\public\wp-content\themes\koko\index.php:36
+Stack trace:
+#0 C:\Users\Harry\Local Sites\cocologie\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Harry\Local Sites\cocologie\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Harry\\...')
+#2 C:\Users\Harry\Local Sites\cocologie\app\public\index.php(17): require('C:\\Users\\Harry\\...')
+#3 {main}
+  thrown in C:\Users\Harry\Local Sites\cocologie\app\public\wp-content\themes\koko\index.php on line 36
+[22-May-2025 14:11:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "title" in C:\Users\Harry\Local Sites\cocologie\app\public\wp-content\themes\koko\index.php:36
+Stack trace:
+#0 C:\Users\Harry\Local Sites\cocologie\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Harry\Local Sites\cocologie\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Harry\\...')
+#2 C:\Users\Harry\Local Sites\cocologie\app\public\index.php(17): require('C:\\Users\\Harry\\...')
+#3 {main}
+  thrown in C:\Users\Harry\Local Sites\cocologie\app\public\wp-content\themes\koko\index.php on line 36
+[22-May-2025 14:11:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "title" in C:\Users\Harry\Local Sites\cocologie\app\public\wp-content\themes\koko\index.php:36
+Stack trace:
+#0 C:\Users\Harry\Local Sites\cocologie\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Harry\Local Sites\cocologie\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Harry\\...')
+#2 C:\Users\Harry\Local Sites\cocologie\app\public\index.php(17): require('C:\\Users\\Harry\\...')
+#3 {main}
+  thrown in C:\Users\Harry\Local Sites\cocologie\app\public\wp-content\themes\koko\index.php on line 36
