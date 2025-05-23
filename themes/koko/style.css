@@ -28,14 +28,14 @@ a{
 
 :root {
   --Midnight: #000000;
-  --Merlot: #7F1F36;
-  --Maroon: #B73750;
-  --Zodiac: #3b3340;
-  --Tory: #1651A5 ;
-  --PastelBlue: #6a5e72 ;
+  --Merlot: #e5ab2e;
+  --Maroon: #fed348;
+  --Zodiac: #04446a;
+  --Tory: #d5752c ;
+  --PastelBlue: #091972 ;
   --White: #FFFFFF ;
-  --LightPastelBlue: #EEF2FB ;
-  --LightMerlot:rgba(127, 31, 54, 0.15);;
+  --LightPastelBlue: #e2e0e3 ;
+  --LightMerlot: #70798B;
 }
 body{
   direction: rtl;
@@ -43,125 +43,7 @@ body{
 
   
 /* button ---------------------------------------------------------------------- */
-.Button{
-  display: inline-flex;
-  height: 56px;
-  padding: 0px 30px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-  font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; 
-}
-.MidnightButton { 
-  border: 1.5px solid var(--Midnight);
-  background: var(--Midnight);
-  color: var(--White);
-}
-.LightMidnightButton {
-  border: 1.5px solid var(--Midnight);
-  background: var(--White);
-  color: var(--Midnight);
-}
-.MerlotButton {
-  border: 1.5px solid var(--Merlot);
-  background: var(--Merlot);
-  color: var(--White);
-}
 
-.MerlotButton:hover{
-  background: var(--White);
-  color: var(--Merlot);
-}
-
-.LightMerlotButton {
-  border: 1.5px solid var(--Merlot);
-  background: var(--White);
-  color: var(--Merlot);
-}
-.MaroonButton {
-  border: 1.5px solid var(--Maroon);
-  background: var(--Maroon);
-  color: var(--White);
-}
-
-.MaroonButton:hover{
-  background: var(--White);
-  color: var(--Maroon);
-}
-
-.LightMaroonButton {
-  border: 1.5px solid var(--Maroon);
-  background: var(--White);
-  color: var(--Maroon);
-}
-.ZodiacButton {
-  border: 1.5px solid var(--Zodiac);
-  background: var(--Zodiac);
-  color: var(--White);
-}
-
-.ZodiacButton:hover{
-  background: var(--White);
-  color: var(--Zodiac);
-}
-.ZodiacButton:hover svg path{
-fill : var(--Zodiac)
-}
-.LightZodiacButton {
-  border: 1.5px solid var(--Zodiac);
-  background: var(--White);
-  color: var(--Zodiac);
-}
-.LightZodiacButton:hover{
-  background: var(--Zodiac);
-  color: var(--White);
-}
-.ToryButton {
-  border: 1.5px solid var(--Tory);
-  background: var(--Tory);
-  color: var(--White);
-}
-
-.ToryButton:hover{
-  background: var(--White);
-  color: var(--Tory);
-}
-
-.LightToryButton {
-  border: 1.5px solid var(--Tory);
-  background: var(--White);
-  color: var(--Tory);
-}
-.PastelBlueButton {
-  border: 1.5px solid var(--PastelBlue);
-  background: var(--PastelBlue);
-  color: var(--White);
-}
-.LightPastelBlueButton {
-  border: 1.5px solid var(--PastelBlue);
-  background: var(--White);
-  color: var(--PastelBlue);
-}
-.WhiteButton {
-  border: 1.5px solid var(--White);
-  background: var(--White);
-  color: var(--Zodiac);
-}
-
-.WhiteButton:hover{
-  background: none;
-  color: var(--White);
-}
-
-.LightWhiteButton {
-  border: 1.5px solid var(--Zodiac); 
-  color: var(--Zodiac);
-}
 .PillButton{
   display: inline-flex;
   height: 45px;
@@ -175,67 +57,20 @@ fill : var(--Zodiac)
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
-}
-.MerlotPillButton{
   border: none;
   border-radius: 100px;
-  background: var(--Merlot);
-  color: var(--White);
-}
-.MerlotLightPillButton{
-  border: none;
-  border-radius: 100px;
-  background: var(--LightMerlot);
-  color: var(--Merlot);
-}
-.MaroonPillButton{
-  border: none;
-  border-radius: 100px;
-  background: var(--Maroon);
-  color: var(--White);
 }
 .ZodiacPillButton{
-  border: none;
-  border-radius: 100px;
   background: var(--Zodiac);
-  color: var(--White);
+  color: var(--Maroon);
 }
 .ToryPillButton{
   border: none;
   border-radius: 100px;
   background: var(--Tory);
-  color: var(--White);
+  color: var(--PastelBlue);
 }
-.PastelBluePillButton{
-  border: none;
-  border-radius: 100px;
-  background: var(--PastelBlue);
-  color: var(--White);
-}
-.LightMerlotPillButton{
-  border: none;
-  border-radius: 100px;
-  background: rgba(127, 31, 54, 0.15);
-  color: var(--Merlot);
-}
-.DarkMerlotPillButton{
-  border: none;
-  border-radius: 100px;
-  background: rgba(127, 31, 54, 0.30);   
-  color: var(--Merlot);  
-}
-.GrayPillButton {
-  display: flex;
-  height: 56px;
-  padding: 0px 30px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  background: rgba(19, 37, 84, 0.15);
-  color: var(--Zodiac);
-  border: none;
-}
+
 
 /* Typography --------------------------------------------------------------------------------------------Typography */
 h1{
@@ -310,13 +145,12 @@ h6{
 /* Basic Reset */
 
 header {
-  background-color: var(--PastelBlue);
-  color: white;
+  background-color: var(--White);
+  color: var(--LightMerlot);
+  padding: 40px 0 45px 0;
 }
 
 .header-content {
-  /* max-width: 1200px;
-  margin: 0 auto; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -335,7 +169,8 @@ header {
 
 .site-title a {
   font-size: 1.5rem;
-  color: white;
+  font-weight: bold;
+  color: var(--Zodiac);
   text-decoration: none;
 }
 
@@ -353,14 +188,21 @@ header {
   list-style: none;
   text-align: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .desktop-menu ul li{
   margin-inline: 10px;
 }
 .desktop-menu ul li a {
-  color: var(--White);
+  color: var(--LightMerlot);
   text-decoration: none;
   font-size: 1rem;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: var(--Midnight) !important;
 }
 
 /* Popup overlay menu */
@@ -418,15 +260,20 @@ header {
 
 /* heroSection ----------------------------------------------------------------------- heroSection */
 
+.herosection{
+  padding-top: 16px;;
+}
 
 .herosection-left{
-  background-image: url(images/graph01.png);
-  background-size: auto;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-inline: 0;
+  margin-inline: 0;
 }
+
+.herosection-left img{
+  border-radius: 20px 458px 20px 20px;
+  width: 100%;
+}
+
 
 .herosection-right{
   display: flex;
@@ -437,54 +284,207 @@ header {
 }
 
 
+.herosection-right p{
+  width: 99px;
+  border: solid 2px var(--Midnight);
+  margin-bottom: 44px;
+}
 
+.herosection-right h6{
+  padding-left: 200px;
+  color: var(--LightMerlot);
+}
+
+/* Modern browsers (Chrome, Edge) */
+@supports (animation-timeline: view()) {
+    .scale-on-scroll {
+        animation: scaleAnimation auto linear;
+        animation-timeline: view();
+        transform-origin: center center;
+    }
+    
+    @keyframes scaleAnimation {
+        entry 0% {
+            transform: scale(0.95);
+        }
+        entry 100% {
+            transform: scale(1);
+        }
+        exit 0% {
+            transform: scale(1);
+        }
+        exit 100% {
+            transform: scale(0.95);
+        }
+    }
+}
+
+/* Fallback for older browsers */
+@supports not (animation-timeline: view()) {
+    .scale-on-scroll {
+        transition: transform 0.5s ease-out;
+        transform-origin: center center;
+        transform: scale(0.95);
+    }
+    
+    .scale-on-scroll.scrolled {
+        transform: scale(1);
+    }
+}
+
+/* Pure CSS solution without JavaScript */
+.herosection {
+    position: relative;
+}
+
+.scale-on-scroll {
+    animation: scaleAnimation 1.5s infinite alternate ease-in-out;
+    transform-origin: center center;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+/* Pause animation when not in view */
+.herosection:not(:hover) .scale-on-scroll {
+    animation-play-state: paused;
+}
 
 
 
 /* post card  ----------------------------------------------------------------------------- post card  */
-
-.posts-cards{
-  margin-block: 100px;
+.kokoGames{
+  margin-block: 120px;
 }
-.posts-cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+
+.kokoGames-header{
+  margin-block: 50px;
+}
+
+.post-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+  justify-content: center;
 }
 
 .post-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+  /* width: 300px; */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
+.post-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s;
+}
+
+.post-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-title {
+  margin: 0;
+  font-size: 1.25rem;
+  transition: color 0.3s;
+}
+
+.post-title a:hover {
+  color: #0073aa;
+}
+
+.post-excerpt {
+  color: #666;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.5em; /* 3 lines approx. */
+}
+
+.read-more {
+  align-self: flex-start;
+  background-color: #0073aa;
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.read-more:hover {
+  background-color: #005f8d;
+}
+
+/* Hover effect */
 .post-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.post-card-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.post-card-content {
-    padding: 15px;
-}
-
-.post-card-content h3 {
-    margin-top: 0;
-}
-
-.post-card-content a {
-    text-decoration: none;
-    color: inherit;
+.post-card:hover .post-image {
+  transform: scale(1.05);
 }
 
 
 
+
+/* contact us ----------------------------------------------------------------------------- cintact us  */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form button {
+  background-color: #0073aa;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #005f8d;
+}
 
 
 
@@ -500,5 +500,44 @@ footer{
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  padding-top: 200px;
+}
 
+
+
+/* single post ------------------------------------------------------------------------------ single post */
+
+/* Single Post Page Styles */
+.single-post-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background:var(--White);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+
+.single-post .post-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.single-post .post-featured-image {
+  margin: 20px 0;
+}
+
+.single-post .post-featured-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.single-post .post-meta {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.single-post .post-content {
+  margin-top: 20px;
+  line-height: 1.7;
 }

@@ -18,6 +18,23 @@
   });
 </script>
 
+<script>
+    // Fallback for older browsers
+    if (!CSS.supports('animation-timeline', 'view()')) {
+        window.addEventListener('scroll', function() {
+            const image = document.querySelector('.scale-on-scroll');
+            const rect = image.getBoundingClientRect();
+            const isVisible = (rect.top <= window.innerHeight) && (rect.bottom >= 0);
+            
+            if (isVisible) {
+                image.classList.add('scrolled');
+            } else {
+                image.classList.remove('scrolled');
+            }
+        });
+    }
+</script>
+
 <?php wp_footer(); ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

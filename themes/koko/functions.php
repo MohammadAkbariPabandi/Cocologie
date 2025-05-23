@@ -11,3 +11,4 @@ function koko_enqueue_styles() {
     wp_enqueue_style('koko-style', get_stylesheet_uri());
 }
 add_action('wp_enqueue_scripts', 'koko_enqueue_styles');
+
