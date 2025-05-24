@@ -41,6 +41,10 @@ body{
   direction: rtl;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
   
 /* button ---------------------------------------------------------------------- */
 
@@ -62,13 +66,54 @@ body{
 }
 .ZodiacPillButton{
   background: var(--Zodiac);
-  color: var(--Maroon);
+  color: var(--White);
+  box-shadow: -10px 15px 50px var(--LightMerlot) !important;
 }
 .ToryPillButton{
+  background: var(--Tory);
+  color: var(--White);
+  box-shadow: -10px 15px 50px var(--LightMerlot) !important;
+}
+
+.ZodiacButton{
+  padding: 10px 25px 6px 25px;
+  font-family: "Cera Pro";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  border: none;
+  border-radius: 100px;
+  background: var(--Zodiac);
+  color: var(--White);
+  box-shadow: -10px 15px 50px var(--LightMerlot) !important;
+}
+
+.ZodiacButton:hover ,
+.ZodiacPillButton:hover {
+  background: var(--White);
+  color: var(--Zodiac);
+  box-shadow: -10px 15px 50px var(--Tory) !important;
+}
+
+.ToryButton{
+  padding: 10px 20px;
+  font-family: "Cera Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
   border: none;
   border-radius: 100px;
   background: var(--Tory);
-  color: var(--PastelBlue);
+  color: var(--White);
+  box-shadow: -10px 15px 50px var(--LightMerlot);
+}
+
+.ToryButton:hover ,
+.ToryPillButton:hover {
+  background: var(--LightMerlot);
+  box-shadow: none !important;
 }
 
 
@@ -321,20 +366,21 @@ header a:hover {
 
 /* Fallback for older browsers */
 @supports not (animation-timeline: view()) {
-    .scale-on-scroll {
-        transition: transform 0.5s ease-out;
-        transform-origin: center center;
-        transform: scale(0.95);
-    }
-    
-    .scale-on-scroll.scrolled {
-        transform: scale(1);
-    }
+  .scale-on-scroll {
+      transition: transform 0.5s ease-out;
+      transform-origin: center center;
+      transform: scale(0.95);
+  }
+  
+  .scale-on-scroll.scrolled {
+      transform: scale(1);
+  }
 }
 
 /* Pure CSS solution without JavaScript */
 .herosection {
-    position: relative;
+  position: relative;
+  margin-bottom: 120px;
 }
 
 .scale-on-scroll {
@@ -360,69 +406,11 @@ header a:hover {
 
 /* post card  ----------------------------------------------------------------------------- post card  */
 .kokoGames{
-  margin-block: 120px;
+  padd-block: 120px;
 }
 
 .kokoGames-header{
   margin-block: 50px;
-}
-
-.post-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  /* gap: 20px; */
-  justify-content: center;
-}
-
-.post-card {
-  /* width: 300px; */
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-}
-
-.post-card a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
-.post-image {
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.3s;
-}
-
-.post-content {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.post-title {
-  margin: 0;
-  font-size: 1.25rem;
-  transition: color 0.3s;
-}
-
-.post-title a:hover {
-  color: #0073aa;
-}
-
-.post-excerpt {
-  color: #666;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 4.5em; /* 3 lines approx. */
 }
 
 .read-more {
@@ -451,6 +439,69 @@ header a:hover {
 }
 
 
+
+
+        
+.kokoGames-section {
+  padding-block: 120px;
+  text-align: center;
+}
+
+
+.kokoGames-roadmap{
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.step-number {
+  font-size: 72px;
+  font-weight: bold;
+  color: var(--LightMerlot);
+  margin-bottom: 30px;
+}
+
+.kokoGames-process-cards {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.kokoGames-card {
+  margin-top: 100px;
+  position: relative;
+}
+
+.kokoGames-process-cards img{
+  position: absolute;
+  width: 72%;
+  left: 223px;
+  height: 62%;
+  z-index: -9;
+  top: 35px;
+}
+
+.kokoGames-card-title a{
+  color: var(--Zodiac);
+}
+
+.kokoGames-card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 35px;
+}
+
+.kokoGames-card-content p{
+  color: var(--LightMerlot);
+}
+
+.kokoGame-card-btn{
+  margin-bottom: 90px;
+  box-shadow: 0px 0px 10px 40px #fff;
+  border-radius: 100%;
+}
 
 
 /* contact us ----------------------------------------------------------------------------- cintact us  */
@@ -489,21 +540,49 @@ header a:hover {
 
 
 
-
-
-
-
 /* footer  ------------------------------------------------------------------------------ footer */
 
-footer{
-  background-image: url(images/footerBackground01.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  padding-top: 200px;
+.footerCard{
+  background-color: var(--Zodiac);
+  padding: 130px 30px;
+  border-radius: 20px;
 }
 
+.footerCard h2{
+  color: var(--White);
+  padding-inline: 120px;
+}
 
+.footerCard-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-inline: 65px;
+}
+
+.footerCard-content p{
+  color: var(--LightMerlot);
+}
+
+.footerCard-content a{
+  margin-top: 30px;
+}
+
+.footerLink{
+  display: flex;
+  align-items: center;
+  direction: ltr;
+  padding-block: 45px;
+  border-bottom: 1px solid var(--LightMerlot);
+}
+
+.footerCopyRight{
+  padding-block: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* single post ------------------------------------------------------------------------------ single post */
 
