@@ -26,7 +26,7 @@
 
 
 
-<section class="kokoGames-section">
+<section class="container kokoGames-section">
     <h4 class="mb-3" style="color: #d5752c;">چرا کوکولوژی؟</h5>
     <h4 style="color: #04446a;">ما با ترکیب علم روانشناسی و سرگرمی، تجربه‌ای منحصر به فرد برای شما فراهم کرده‌ایم</h4>
     <div class="kokoGames-process-cards">
