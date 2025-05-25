@@ -32,9 +32,8 @@
         <li><a href="#">خانه</a></li>
         <li><a href="#">بازی ها</a></li>
         <li><a href="#">پکیج ها</a></li>
-        <li><a href="#">درباره ما</a></li>
-        <li><a href="#">ارتباط با ما</a></li>
-        <li><a class="PillButton ZodiacPillButton" href="#">درخواست ثبت نام</a></li>
+        <li><a href="<?php echo get_permalink( get_page_by_title('about-us') ); ?>">درباره ما</a></li>
+        <li><a href="<?php echo get_permalink( get_page_by_title('contact-us') ); ?>">ارتباط با ما</a></li>
       </ul>
     </nav>
   </div>

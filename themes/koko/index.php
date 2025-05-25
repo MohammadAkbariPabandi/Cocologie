@@ -1,52 +1,51 @@
 <?php get_header(); ?>
 
-<div class="container herosection">
+<section class="container herosection">
     <div class="row">
         <div class="col-md-6 herosection-right">
-            <p class="body-lorge">به کوکولوژِی خوش آمدید</p>
-            <h3>کوکولوژی چیست</h5>
-            <h4>سفر به درون خود با استفاده از بازی</h6>
-            <h5>فندک کو فنک نیست</h5>
-            <a class="PillButton ZodiacPillButton" href="#">درخواست ثبت نام</a>
+            <p></p>
+            <h3 class="mb-5" style="color: #091972;">کشف دنیای شگفت انگیز <span><h3 style="color: #d5752c;" >روانشناسی با بازی</h3></span> </h3>
+            <h6>**با کوکولوژی، روانشناسی را به شیوه‌ای سرگرم‌کننده و جذاب کشف کنید!**  
+                پکیج‌های متنوع ما برای تمام سنین طراحی شده‌اند تا یادگیری روانشناسی را لذت‌بخش کنند.  
+                چه کودک باشید، چه نوجوان یا بزرگسال، کوکولوژی برای شما تجربه‌ای منحصربه‌فرد دارد.  
+                با بازی، تست‌ها و فعالیت‌های خلاقانه، مفاهیم روانشناسی را به سادگی درک کنید.  
+                همین حالا به دنیای رنگارنگ کوکولوژی وارد شوید و روانشناسی را با هیجان بیاموزید!
+            </h6>
+            <div class="mt-4 d-flex gap-5">
+                <a class="PillButton ZodiacPillButton" href="#">درخواست ثبت نام</a>
+                <a class="PillButton ToryPillButton" href="#">مشاهده پکیج</a>
+            </div>
+
         </div>
         <div class="col-md-6 herosection-left">
-            <h5>تخفیف 80 درصد برای مشارکت </h5>
+           <img src="<?php echo get_template_directory_uri(); ?>/images/heroLeft.jpg" class="scale-on-scroll">
         </div>
     </div>
-</div>
+</section>
 
 
-<div class="container posts-cards">
-    <div class="posts-cards-container">
-        <?php
-        $args = array(
-            'post_type' => 'post',
-            'posts_per_page' => -1 // Show all posts
-        );
-        
-        $query = new WP_Query($args);
-        
-        if ($query->have_posts()) :
-            while ($query->have_posts()) : $query->the_post(); ?>
-                <div class="post-card">
-                    <?php if (has_post_thumbnail()) : ?>
-                        <div class="post-card-image">
-                            <?php the_post_thumbnail('medium'); ?>
-                        </div>
-                    <?php endif; ?>
-                    <div class="post-card-content">
-                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                        <div class="post-excerpt">
-                            <?php the_excerpt(); ?>
-                        </div>
+
+
+<section class="container kokoGames-section">
+    <h4 class="mb-3" style="color: #d5752c;">چرا کوکولوژی؟</h5>
+    <h4 style="color: #04446a;">ما با ترکیب علم روانشناسی و سرگرمی، تجربه‌ای منحصر به فرد برای شما فراهم کرده‌ایم</h4>
+    <div class="kokoGames-process-cards">
+        <div class="row kokoGames-card">
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <div class="col-md-4 kokoGames-card-content">
+                    <div class="kokoGame-card-btn">
+                        <a href="<?php the_permalink(); ?>" class="ZodiacButton"><?php echo $wp_query->current_post + 1; ?></a>
                     </div>
+                    <h3 class="kokoGames-card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                    <p><?php echo get_the_excerpt(); ?></p>
                 </div>
-            <?php endwhile;
-            wp_reset_postdata();
-        else :
-            echo '<p>No posts found</p>';
-        endif; ?>
+            <?php endwhile; endif; ?>
+        </div>   
+        <img src="<?php echo get_template_directory_uri(); ?>/images/dash.png" >
     </div>
+</section>
+
 </div>
 
 <?php get_footer(); ?>
+
