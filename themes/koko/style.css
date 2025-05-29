@@ -416,6 +416,7 @@ header a:hover {
 
   .herosection-right h6{
     padding-left: 0;
+    text-align: justify;
   }
   .herosection-right p{
     margin-bottom: 05px;
@@ -532,48 +533,95 @@ header a:hover {
 }
 
 @media (max-width: 768px) {
-.kokoGames-process-cards img{
-  display: none;
+  .kokoGames-process-cards img{
+    display: none;
+  }
+  .kokoGames-section {
+    padding-block: 90px;
+    padding-inline: 30px;
+  }
+  .kokoGames-card{
+    margin-top: 50px;
+  }
+  .kokoGame-card-btn{
+    margin-bottom: 30px;
+    box-shadow: none;
+  }
+  .kokoGames-card-content{
+    margin-bottom: 30px;
+  }
 }
 
+
+
+
+/* play section ------------------------------------------------------------------------------ play section */
+.kokoPlay-section{
+  padding-bottom: 190px;
+  padding-top: 100px;
 }
 
-
-
-/* contact us ----------------------------------------------------------------------------- cintact us  */
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 20px;
+.kokoPlay-header h6{
+   margin-bottom: 70px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 1rem;
+.kokoPlay-list{
+  padding-block: 70px;
+}
+
+.kokoPlay-image{
+  padding-inline: 30px;
+}
+
+.kokoPlay-image img { 
   width: 100%;
+  height: 490px;
+  border-radius: 349px 20px 20px 20px;
 }
 
-.contact-form button {
-  background-color: #0073aa;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+/* Plays Card Grid Layout */
+.plays-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
-
-.contact-form button:hover {
-  background-color: #005f8d;
+.plays-card-container a{
+  margin-bottom: 20px;
 }
 
 
+.play-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .kokoPlay-section{
+    padding-block: 0 !important;
+    padding-inline: 30px;
+  }
+  .kokoPlay-header h6{
+    margin-bottom: 20px !important;
+  }
+  .kokoPlay-header p{
+    text-align: justify;
+  }
+  .kokoPlay-image{
+    padding-inline: 0 !important;
+    padding-top: 30px;
+  }
+  .kokoPlay-image img {
+    border-radius: 240px 20px 20px 20px !important;
+  }
+  .play-card p{
+    text-align: justify;
+  }
+  .play-card{
+    margin-bottom: 20px;
+  }
+}
 
 
 /* footer  ------------------------------------------------------------------------------ footer */
@@ -624,6 +672,35 @@ header a:hover {
   align-items: center;
 }
 
+.footerCopyRight p{
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .footerCard{
+    padding: 50px 10px;
+  }
+  .footerCard h2{
+    padding-inline: 0;
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 23px;
+  }
+  .footerLink{
+    align-items: center;
+    direction: ltr;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footerLink nav{
+    display: flex;
+  }
+  .desktop-menu ul{
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
 /* single post ------------------------------------------------------------------------------ single post */
 
 /* Single Post Page Styles */
@@ -659,4 +736,131 @@ header a:hover {
 .single-post .post-content {
   margin-top: 20px;
   line-height: 1.7;
+}
+
+
+/* single Games ------------------------------------------------------------------------------ single Games */
+/* Single Play Page Styles with singlePlay- prefix */
+.singlePlay-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.singlePlay-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.singlePlay-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.singlePlay-featuredImage {
+    margin-bottom: 20px;
+}
+
+.singlePlay-featuredImage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.singlePlay-meta {
+    margin: 20px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.singlePlay-categories a,
+.singlePlay-tags a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 3px 8px;
+    background: #f0f0f0;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #333;
+}
+
+.singlePlay-tags a {
+    background: #e0e0e0;
+}
+
+.singlePlay-content {
+    line-height: 1.8;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+.singlePlay-details {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.singlePlay-details p {
+    margin: 10px 0;
+}
+
+.singlePlay-footer {
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+
+
+
+/* about us ----------------------------------------------------------------------------- about us  */
+
+.about-section, .mission-section, .team-section {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.about-section-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+/* contact us ----------------------------------------------------------------------------- cintact us  */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form button {
+  background-color: #0073aa;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #005f8d;
 }
