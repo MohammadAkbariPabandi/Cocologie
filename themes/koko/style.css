@@ -118,68 +118,32 @@ body{
 
 
 /* Typography --------------------------------------------------------------------------------------------Typography */
-h1{
+.base{
   font-family: "Cera Pro";
-  font-size: 56px;
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+}
+h1{
+  font-size: 36px;
 }
 h2{
-  font-family: "Cera Pro";
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
+  font-size: 28px;
 }
 h3{
-  font-family: "Cera Pro";
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
+  font-size: 22px;
 }
 h4{
-  font-family: "Cera Pro";
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
-}
-h5{
-  font-family: "Cera Pro";
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
-}
-h6{
-  font-family: "Cera Pro";
   font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%;
 }
 .body-large{
-  font-family: "Cera Pro";
   font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
 }
 .body-base{
-  font-family: "Cera Pro";
   font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
 }
 .body-small{
-  font-family: "Cera Pro";
   font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
 }
 
 
@@ -342,9 +306,10 @@ header a:hover {
   margin-bottom: 44px;
 }
 
-.herosection-right h6{
+.herosection-right h4{
   padding-left: 200px;
   color: var(--LightMerlot);
+  text-align: justify;
 }
 
 /* Modern browsers (Chrome, Edge) */
@@ -561,7 +526,11 @@ header a:hover {
   padding-top: 100px;
 }
 
-.kokoPlay-header h6{
+.kokoPlay-section p{
+  text-align: justify;
+}
+
+.kokoPlay-header h4{
    margin-bottom: 70px;
 }
 
@@ -635,6 +604,7 @@ header a:hover {
 .footerCard h2{
   color: var(--White);
   padding-inline: 120px;
+  font-size: 42px;
 }
 
 .footerCard-content{
