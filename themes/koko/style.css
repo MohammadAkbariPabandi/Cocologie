@@ -788,18 +788,138 @@ header a:hover {
 
 /* about us ----------------------------------------------------------------------------- about us  */
 
-.about-section, .mission-section, .team-section {
-    padding: 30px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
+.about-section{
+  margin-bottom: 100px;
 
-.about-section-content{
+}
+.about-mission{
+  text-align: center;
+  margin-bottom: 100px;
+}
+.about-mission h2{
+  text-align: center;
+}
+.about-mission-card{
+  border-radius: 20px;
+  height: 330px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  transition: all 600ms;
+  padding: 30px 90px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.about-mission-card p{
+  line-height: 180%;
+  color: var(--LightMerlot);
+  text-align: center;
+}
+.about-mission-card-title{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
 
+.about-mission-card:hover{
+  scale: 1.05;
+  box-shadow: var(--Tory) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+
+.aboutTime{
+  display: flex;
+  margin-bottom: 120px;
+}
+.aboutTime-card > img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutTime-card img{
+  border-radius: 10px;
+  filter: blur(3.5px);
+}
+.aboutTime-card{
+  position: relative;
+  flex: 2;
+  height: 100%;
+  transition: all 600ms;
+  cursor: pointer;
+  padding-inline: 30px;
+}
+
+.aboutTime-card:nth-child(odd) {
+  translate: 0 -20px;
+}
+
+.aboutTime-card:nth-child(even) {
+  translate: 0 20px;
+}
+
+.aboutTime-card:hover .aboutTime-card:not(:hover) {
+  filter: grayscale(100%);
+}
+.aboutTime-card:hover img {
+  filter: blur(0);
+}
+
+.aboutTime-card:hover {
+  flex: 3;
+}
+
+.aboutTime-card-content{
+  position: absolute;
+  bottom: 50px;
+  right: 40px;
+  background-color: rgba(255, 255, 255, 0.06);
+	backdrop-filter: blur(80px);
+	padding: 25px;
+	box-shadow: inset -1px 0px 20px 20px rgba(0, 0, 0, 0.15);
+	border: 1.5px solid rgba(255, 255, 255, 0.06);
+	border-radius: 10px;
+  width: 65%;
+}
+
+.aboutTime-card-content h4 {
+  font-size: 12px;
+}
+
+.aboutTime-card-content p {
+  font-size: 11px;
+}
+
+.aboutHistory{
+  padding-block: 120px;
+}
+
+.aboutHistory-right{
+  position: relative;
+}
+.aboutHistory-right span{
+  position: absolute;
+  left: -24px;
+  top: 42%;
+}
+
+.aboutHistory-left{
+  border-right: 4px var(--Zodiac)  solid;
+}
+
+.aboutHistory-card{
+  margin: 30px 100px;
+  padding: 30px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border-radius: 10px;
+}
+
+.aboutHistory-card h3{
+  color: var(--Tory);
+}
+
+.aboutHistory-card p{
+  color: var(--Zodiac);
+}
 
 
 /* contact us ----------------------------------------------------------------------------- cintact us  */
