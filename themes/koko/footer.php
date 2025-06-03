@@ -3,11 +3,11 @@
     <div class="footerCard">
       <div class="row">
         <div class="col-md-7">
-          <h2>دریافت اطلاعات بیشتر و ثبت نام در پکیج‌های کوکولوژی</h2>
+          <h2 class="base">دریافت اطلاعات بیشتر و ثبت نام در پکیج‌های کوکولوژی</h2>
         </div>
         <div class="col-md-5 d-flex align-items-center">
           <div class="footerCard-content">
-            <p class="body-lorge">تیم ما متشکل از روانشناسان متخصص و طراحان بازی است که با همکاری یکدیگر، تجربه‌ای منحصر به فرد برای شما فراهم کرده‌اند.</p>
+            <p class="base body-lorge">تیم ما متشکل از روانشناسان متخصص و طراحان بازی است که با همکاری یکدیگر، تجربه‌ای منحصر به فرد برای شما فراهم کرده‌اند.</p>
             <a class="ToryButton" href="#">درخواست ثبت نام</a>
           </div>
         </div>
@@ -36,7 +36,7 @@
   </div>
 
   <div class="container footerCopyRight">
-    <p class="body-base">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+    <p class="base body-base">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
     <div class="d-flex gap-4">
       <a href="#">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24">
