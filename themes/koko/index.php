@@ -54,7 +54,7 @@
             </p>
         </div>
         <div class="col-md-5 kokoPlay-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/games.png" >
+            <img src="<?php echo get_template_directory_uri(); ?>/images/nora.jpg" >
         </div>
         <div class="col-md-3 kokoPlay-list">
             <?php
@@ -73,16 +73,27 @@
                 while ($games_query->have_posts()) : $games_query->the_post();
                     ?>
                     <a href="<?php the_permalink(); ?>">
-                        <div class="play-card">
-                            <h3 class="base play-title" style="color: #04446a;"><?php the_title(); ?></h3>
-                            <?php if (has_post_thumbnail()) : ?>
-                                <div class="play-thumbnail">
-                                    <?php the_post_thumbnail('medium'); ?>
+                        <div class="playSidbar-card">
+                            <div class="row">
+                                <div class="col-3 playSidbar-card-image">
+                                    <?php 
+                                    $hero_image = get_field('hero');
+                                    if ($hero_image) : ?>
+                                        <img src="<?php echo esc_url($hero_image['url']); ?>" 
+                                            alt="<?php echo esc_attr($hero_image['alt']); ?>" 
+                                            >
+                                    <?php endif; ?>
                                 </div>
-                            <?php endif; ?>
-                            <div class="play-content base body-small" style="color: #70798B;">
-                                <?php the_excerpt(); ?>
-                            </div>
+                                <div class="col-9">
+                                    <h4 class="base mb-3 play-title" style="color: #04446a;"><?php the_title(); ?></h4>
+                                    <div class="play-content base body-small" style="color: #70798B;">
+                                        <?php $summary = get_field('summaryPlay'); ?>
+                                        <?php if ($summary) : ?>
+                                            <?php echo esc_html($summary); ?>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                            </div> 
                         </div>
                     </a>
                     <?php
