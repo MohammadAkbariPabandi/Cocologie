@@ -98,7 +98,8 @@
 
 </section>
 
-<section class="container">
+<section class="faq-section base container">
+    <h2 class="base mb-4">سوالات متداول</h2>
     <?php echo do_shortcode('[faq category="payment" toggle="true" count="3"]'); ?>
 </section>
 
