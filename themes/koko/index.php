@@ -98,6 +98,10 @@
 
 </section>
 
+<section class="container">
+    <?php echo do_shortcode('[faq category="payment" toggle="true" count="3"]'); ?>
+</section>
+
 </div>
 
 <?php get_footer(); ?>
