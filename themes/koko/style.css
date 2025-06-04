@@ -924,33 +924,45 @@ header a:hover {
 
 /* contact us ----------------------------------------------------------------------------- cintact us  */
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 20px;
+.contactRegister{
+  padding: 50px 400px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 1rem;
-  width: 100%;
+.contactRegister h2{
+  color: var(--Zodiac);
+  border-top: 2px solid var(--Tory);
+  padding-block: 30px;
 }
 
-.contact-form button {
-  background-color: #0073aa;
-  color: #fff;
+.contactRegister  div.wpforms-container-full button[type=submit]{
+  padding: 10px 30px;
+  font-family: "Cera Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
   border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  border-radius: 100px;
+  background: var(--Tory);
+  color: var(--White);
+  box-shadow: -10px 15px 50px var(--LightMerlot);
 }
 
-.contact-form button:hover {
-  background-color: #005f8d;
+.contactInfo{
+  margin-bottom: 120px;
+  padding: 30px;
+  box-shadow: var(--Zodiac) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border-radius: 10px;
+}
+
+.contactInfo h2 ,
+.contactInfo h3 {
+  color: var(--Zodiac);
+}
+
+@media (max-width: 768px) {
+  .contactRegister{
+    padding: 30px;
+  }
+
 }

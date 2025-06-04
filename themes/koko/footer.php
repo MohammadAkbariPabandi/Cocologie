@@ -8,7 +8,7 @@
         <div class="col-md-5 d-flex align-items-center">
           <div class="footerCard-content">
             <p class="base body-lorge">تیم ما متشکل از روانشناسان متخصص و طراحان بازی است که با همکاری یکدیگر، تجربه‌ای منحصر به فرد برای شما فراهم کرده‌اند.</p>
-            <a class="ToryButton" href="#">درخواست ثبت نام</a>
+            <a class="ToryButton" href="<?php echo get_permalink( get_page_by_title('contact-us') ); ?>">درخواست ثبت نام</a>
           </div>
         </div>
       </div>

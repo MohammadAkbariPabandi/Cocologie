@@ -12,7 +12,7 @@
                 همین حالا به دنیای رنگارنگ کوکولوژی وارد شوید و روانشناسی را با هیجان بیاموزید!
             </h4>
             <div class="mt-4 d-flex gap-5">
-                <a class="PillButton ZodiacPillButton" href="#">درخواست ثبت نام</a>
+                <a class="PillButton ZodiacPillButton" href="<?php echo get_permalink( get_page_by_title('contact-us') ); ?>">درخواست ثبت نام</a>
                 <a class="PillButton ToryPillButton" href="#">مشاهده پکیج</a>
             </div>
 
