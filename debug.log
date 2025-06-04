@@ -6479,3 +6479,4 @@ Stack trace:
 [03-Jun-2025 08:31:47 UTC] PHP Deprecated:  Function get_page_by_title is <strong>deprecated</strong> since version 6.2.0! Use WP_Query instead. in C:\Users\Harry\Local Sites\cocologie\app\public\wp-includes\functions.php on line 6121
 [03-Jun-2025 08:31:47 UTC] PHP Deprecated:  Function get_page_by_title is <strong>deprecated</strong> since version 6.2.0! Use WP_Query instead. in C:\Users\Harry\Local Sites\cocologie\app\public\wp-includes\functions.php on line 6121
 [03-Jun-2025 08:31:47 UTC] PHP Deprecated:  Function get_page_by_title is <strong>deprecated</strong> since version 6.2.0! Use WP_Query instead. in C:\Users\Harry\Local Sites\cocologie\app\public\wp-includes\functions.php on line 6121
+[04-Jun-2025 14:24:05 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
