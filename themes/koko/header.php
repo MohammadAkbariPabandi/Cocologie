@@ -17,7 +17,7 @@
   <div class="container header-content">
     <!-- Logo + Title -->
     <div class="logo-title">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Kokology Logo">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logo01.png" alt="Kokology Logo">
       <div class="site-title">
         <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
       </div>
@@ -29,8 +29,8 @@
     <!-- Desktop Menu (hidden on mobile) -->
     <nav class="desktop-menu">
       <ul>
-        <li><a class="base" href="#">خانه</a></li>
-        <li><a class="base" href="#">بازی ها</a></li>
+        <li><a class="base" href="<?php echo esc_url(home_url('/')); ?>">خانه</a></li>
+        <li><a class="base" href="<?php echo get_permalink( get_page_by_title('play') ); ?>">بازی ها</a></li>
         <li><a class="base" href="#">پکیج ها</a></li>
         <li><a class="base" href="<?php echo get_permalink( get_page_by_title('about-us') ); ?>">درباره ما</a></li>
         <li><a class="base" href="<?php echo get_permalink( get_page_by_title('contact-us') ); ?>">ارتباط با ما</a></li>
@@ -43,11 +43,11 @@
 <div class="popup-menu" id="popupMenu">
   <button class="popup-close" onclick="closePopupMenu()">×</button>
   <ul>
-    <li><a class="base" href="#">خانه</a></li>
+    <li><a class="base" href="<?php echo esc_url(home_url('/')); ?>">خانه</a></li>
     <li><a class="base" href="#">بازی ها</a></li>
     <li><a class="base" href="#">پکیج ها</a></li>
-    <li><a class="base" href="#">درباره ما</a></li>
-    <li><a class="base" href="#">ارتباط با ما</a></li>
+    <li><a class="base" href="<?php echo get_permalink( get_page_by_title('about-us') ); ?>">درباره ما</a></li>
+    <li><a class="base" href="<?php echo get_permalink( get_page_by_title('contact-us') ); ?>">ارتباط با ما</a></li>
     <li><a class="PillButton ZodiacPillButton" href="<?php echo get_permalink( get_page_by_title('contact-us') ); ?>">درخواست ثبت نام</a></li>
   </ul>
   <div class="logo-title mt-5">
