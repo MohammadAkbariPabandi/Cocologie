@@ -172,7 +172,7 @@ header {
 }
 
 .logo-title img {
-  width: 40px;
+  /* width: 40px; */
   height: 40px;
 }
 
@@ -379,9 +379,8 @@ header a:hover {
     margin-bottom: 0;
   }
 
-  .herosection-right h6{
+  .herosection-right h4{
     padding-left: 0;
-    text-align: justify;
   }
   .herosection-right p{
     margin-bottom: 05px;
@@ -549,13 +548,24 @@ header a:hover {
 }
 
 /* Plays Card Grid Layout */
+.playSidbar-card{
+  margin-bottom: 30px;
+}
+
+.playSidbar-card-image{
+  padding: 0;
+}
+.playSidbar-card-image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+/* Plays Card Grid Layout */
 .plays-card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
-.plays-card-container a{
-  margin-bottom: 20px;
-}
+
 
 
 .play-content {
@@ -711,79 +721,141 @@ header a:hover {
 
 /* single Games ------------------------------------------------------------------------------ single Games */
 /* Single Play Page Styles with singlePlay- prefix */
-.singlePlay-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.singlePlay-header{
+  position: relative;
+  padding-block: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Zodiac);
+  padding-top: 55px;
+  padding-bottom: 140px;
 }
 
-.singlePlay-header {
-    margin-bottom: 30px;
-    text-align: center;
+.singlePlay-title{
+  color: var(--White);
+  margin-bottom: 36px;
 }
 
-.singlePlay-title {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #333;
+.singlePlay-meta{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;;
 }
 
-.singlePlay-featuredImage {
-    margin-bottom: 20px;
+.singlePlay-header h4{
+  padding-right: 16px;
+  color: var(--White);
+  border-right: 2px solid var(--White);
 }
 
-.singlePlay-featuredImage img {
-    max-width: 100%;
-    height: auto;
+.singlePlay-meta p{
+  color: var(--Merlot);
+  margin: 0;
+}
+
+.singlePlay-meta .point{
+  margin-left: 10px;
+}
+
+.singlePlay-body{
+  margin-block: 100px;
+}
+
+.singlePlay-content{
+  line-height: 200%;
+}
+
+.singlePlay-content-left{
+  border-right: 2px solid var(--Zodiac) ;
+  padding-right: 40px;
+}
+.singlePlay-content-right{
+  padding-left: 70px;
+  text-align: justify;
+}
+
+.singlePlay-hero img{
+  position: absolute;
+  top: 40px;
+  left: 150px;
+  width: 240px;
+  height: 200px;
+  border-radius: 10px 84px 10px 10px;
+}
+
+.singlePlay-cover img{
+  width: 100%;
+  margin-top: -82px;
+  height: 450px;
+}
+
+
+/* Plays Collection Container */
+.plays-collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Individual Play Card */
+.play-card {
+    background: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.singlePlay-meta {
-    margin: 20px 0;
-    font-size: 0.9em;
+.play-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Card Image */
+.play-card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Card Content */
+.play-card__content {
+    padding: 15px;
+}
+
+.play-card__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.25rem;
+}
+
+.play-card__summary {
+    margin-bottom: 15px;
     color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
-.singlePlay-categories a,
-.singlePlay-tags a {
+.play-card__link {
     display: inline-block;
-    margin-right: 10px;
-    padding: 3px 8px;
-    background: #f0f0f0;
-    border-radius: 3px;
+    margin-top: 10px;
+    color: #0066cc;
     text-decoration: none;
-    color: #333;
-}
-
-.singlePlay-tags a {
-    background: #e0e0e0;
-}
-
-.singlePlay-content {
-    line-height: 1.8;
-    font-size: 1.1em;
-    margin-bottom: 40px;
-}
-
-.singlePlay-details {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 30px 0;
-}
-
-.singlePlay-details p {
-    margin: 10px 0;
-}
-
-.singlePlay-footer {
-    margin-top: 50px;
-    border-top: 1px solid #eee;
-    padding-top: 30px;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 
+
+/* No plays found message */
+.plays-not-found {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 1.1rem;
+}
 
 
 /* about us ----------------------------------------------------------------------------- about us  */
@@ -991,4 +1063,10 @@ header a:hover {
 
 .faq-section .arconix-faq-title{
   color: var(--Maroon);
+}
+
+@media (max-width: 768px) {
+  .faq-section{
+    padding-inline: 30px;
+  }
 }

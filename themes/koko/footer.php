@@ -25,7 +25,7 @@
       <!-- Desktop Menu (hidden on mobile) -->
       <nav class="desktop-menu">
         <ul>
-          <li><a class="ZodiacButton" href="#">خانه</a></li>
+          <li><a class="ZodiacButton" href="<?php echo esc_url(home_url('/')); ?>">خانه</a></li>
           <li><a class="ZodiacButton" href="#">بازی ها</a></li>
           <li><a class="ZodiacButton" href="#">پکیج ها</a></li>
           <li><a class="ZodiacButton" href="<?php echo get_permalink( get_page_by_title('about-us') ); ?>">درباره ما</a></li>
