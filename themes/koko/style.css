@@ -1070,3 +1070,14 @@ header a:hover {
     padding-inline: 30px;
   }
 }
+
+
+/* plays ------------------------------------------------------------------------------ plays  */
+
+.playsSection{
+  margin-bottom: 120px;
+}
+
+.playsSection .plays-collection {
+  gap: 40px;
+}
