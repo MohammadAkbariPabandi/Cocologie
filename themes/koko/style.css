@@ -534,7 +534,7 @@ header a:hover {
 }
 
 .kokoPlay-list{
-  padding-block: 70px;
+  padding-block: 10px;
 }
 
 .kokoPlay-image{
@@ -566,7 +566,13 @@ header a:hover {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
+.kokoPlay-list .plays-card-container{
+  gap: 20px;
+}
 
+.kokoPlay-list .plays-card-container .play-card{
+  padding: 20px;
+}
 
 .play-content {
   display: -webkit-box;
@@ -804,6 +810,11 @@ header a:hover {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.play-card img{
+  height: 250px;
+  width: 100%;
 }
 
 .play-card:hover {
