@@ -814,7 +814,7 @@ header a:hover {
 /* Card Image */
 .play-card__image {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     display: block;
 }
@@ -836,6 +836,8 @@ header a:hover {
     color: #666;
     font-size: 0.9rem;
     line-height: 1.5;
+    height: 60px;
+    overflow: hidden;
 }
 
 .play-card__link {
