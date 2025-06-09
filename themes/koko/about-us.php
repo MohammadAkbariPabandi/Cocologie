@@ -10,7 +10,9 @@ get_header(); ?>
     <div class="row">
       <div class="col-md-6 herosection-right">
           <p></p>
-          <h1 style="color: #04446a;">ما کی هستیم؟</h1>
+          <h1 style="color: #04446a;">
+            <?php echo get_field('abouttitle'); ?>
+          </h1>
           <h1 class="mb-5" style="color: #d5752c ;">کوکولوژی: سفرِ کشفِ خود</h1>
           <h4 class="base"> 
             کوکولوژی در سال 1399 توسط گروهی از روانشناسان و متخصصان بازی‌سازی با یک هدف مشترک تأسیس شد: ایجاد راهی جذاب و مؤثر برای آموزش مفاهیم روانشناسی به کودکان، نوجوانان و بزرگسالان از طریق بازی.
