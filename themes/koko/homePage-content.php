@@ -27,6 +27,98 @@
     </div>
 </section>
 
+<section class="container keywordeSection">  
+    
+        <div class="row">
+            <div class="col-md-3">
+                <div class="keyword-container">
+                    <div class="keyword-card">
+                        <div class="keyword-face keyword-face1">
+                            <div class="keyword-content">
+                                
+                                <h3 class="base">خودشناسی</h3>
+                            </div>
+                        </div>
+                        <div class="keyword-face keyword-face2">
+                            <div class="keyword-content">
+                                <p class="base body-base">
+                                    ۱. شناخت عمیق نقاط قوت و ضعف خود
+                                    ۲. درک واقعی از ارزش‌ها، علایق و اهداف شخصی
+                                    ۳. پذیرش خود بدون قضاوت و تلاش برای رشد فردی
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="keyword-container">
+                    <div class="keyword-card">
+                        <div class="keyword-face keyword-face1">
+                            <div class="keyword-content">
+                                
+                                <h3 class="base">یادگیری</h3>
+                            </div>
+                        </div>
+                        <div class="keyword-face keyword-face2">
+                            <div class="keyword-content">
+                                <p class="base">
+                                    ۱. کسب دانش و مهارت‌های جدید (چه از طریق مطالعه، تجربه یا آموزش)
+                                    ۲. تغییر پایدار در رفتار و تفکر بر اساس آموخته‌ها
+                                    ۳. فرآیندی مادام‌العمر که انسان را به رشد و انعطاف‌پذیری فکری می‌رساند.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                 <div class="keyword-container">
+                    <div class="keyword-card">
+                        <div class="keyword-face keyword-face1">
+                            <div class="keyword-content">
+                               
+                                <h3 class="base">سرگرمی</h3>
+                            </div>
+                        </div>
+                        <div class="keyword-face keyword-face2">
+                            <div class="keyword-content">
+                                <p class="base">
+                                    ۱. فعالیتی لذت‌بخش و اختیاری که انرژی ذهنی را بازمی‌گرداند و استرس را کاهش می‌دهد.
+                                    ۲. فرصتی برای کشف خلاقیت، مهارت‌های جدید یا ارتباط با دیگران (مثل ورزش، هنر، بازی).
+                                    ۳. نیاز طبیعی انسان برای تنوع و تجربه لحظات شاد، فارغ از دغدغه‌های روزمره.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                 <div class="keyword-container">
+                    <div class="keyword-card">
+                        <div class="keyword-face keyword-face1">
+                            <div class="keyword-content">
+                               
+                                <h3 class="base">توسعه فردی</h3>
+                            </div>
+                        </div>
+                        <div class="keyword-face keyword-face2">
+                            <div class="keyword-content">
+                                <p class="base">
+                                    ۱. تلاش آگاهانه برای بهبود مهارت‌ها، دانش و توانایی‌های شخصی در ابعاد مختلف زندگی (ذهنی، عاطفی، حرفه‌ای).
+                                    ۲. خروج از منطقه امن برای تبدیل نقاط ضعف به قوت و تقویت استعدادهای ذاتی.
+                                    ۳. سفر مادام‌العمر به سوی نسخهٔ بهتر خود، با تعریف اهداف SMART و پیگیری مستمر آنها.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+       
+    </div>
+</section>
 
 <section class="container kokoGames-section">
     <h2 class="mb-3 base" style="color: #d5752c;"><?php echo get_theme_field('kokogames-section-title', '', $post->ID); ?></h2>
@@ -49,14 +141,16 @@
     </div>
 </section>
 
+
+
 <section class="container kokoPlay-section">
     <div class="row">
         <div class="col-md-4 kokoPlay-header">
-            <h4 class="base"><?php echo get_theme_field('kokoplay-section-headtitle', '', $post->ID); ?></h4>
-            <h2 class="base" style="color: #70798B;"><?php echo get_theme_field('kokoplay-section-title', '', $post->ID); ?><span>
-            <h1 style="color: #04446a;"><?php echo get_theme_field('kokoplay-section-subtitle', '', $post->ID); ?></h1></span></h2>
+            <h4 class="base">رویکرد ما</h4>
+            <h2 class="base" style="color: #70798B;">راه حل های<span>
+            <h1 style="color: #04446a;">متناسب با نیاز شما</h1></span></h2>
             <p class="mt-5 base body-base" style="color: #70798B;">
-                <?php echo get_theme_field('kokoplay-section-summary', '', $post->ID); ?>
+               کوکولوژی با هدف ترکیب علم روانشناسی و سرگرمی تأسیس شده است. ما معتقدیم که یادگیری و خودشناسی می‌تواند لذت‌بخش و سرگرم‌کننده باشد. تیم ما متشکل از روانشناسان متخصص و طراحان بازی است که با همکاری یکدیگر، تجربه‌ای منحصر به فرد برای شما فراهم کرده‌اند. هدف ما کمک به افراد برای شناخت بهتر خود و بهبود روابط بین فردی از طریق بازی‌ها روانشناسی است.
             </p>
         </div>
         <div class="col-md-5 kokoPlay-image">

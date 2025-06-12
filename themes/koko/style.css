@@ -249,7 +249,7 @@ header a:hover {
   top: 20px;
   left: 30px;
   font-size: 4rem;
-  color: white;
+  color:  var(--White);;
   cursor: pointer;
   background: none;
   border: none;
@@ -266,9 +266,8 @@ header a:hover {
     padding-inline: 30px;
   }
   header {
-  padding: 20px 0 15px 0;
-}
-
+    padding: 20px 0 15px 0;
+  }
 }
 
 
@@ -277,7 +276,6 @@ header a:hover {
 
 .herosection{
   padding-top: 16px;
-  margin-bottom: 120px;
 }
 
 .herosection-left{
@@ -398,6 +396,90 @@ header a:hover {
     width: 100%;
   }
 }
+
+
+/* keyworde section ---------------------------------------------------------------------------keyworde section  */
+
+
+.keywordeSection{
+  margin-top: 120px;
+}
+
+.keyword-container{
+  display: flex;
+    justify-content: center;
+}
+
+.keyword-container .keyword-card{
+    position: relative;
+    cursor: pointer;
+}
+
+.keyword-container .keyword-card .keyword-face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.keyword-container .keyword-card .keyword-face.keyword-face1{
+    position: relative;
+    background: var(--Zodiac);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    border-radius: 10px 10px 0 0;
+}
+
+.keyword-container .keyword-card:hover .keyword-face.keyword-face1{
+    background: var(--Tory);
+    transform: translateY(0);
+}
+
+.keyword-container .keyword-card .keyword-face.keyword-face1 .keyword-content{
+    transition: 0.5s;
+}
+
+.keyword-container .keyword-card:hover .keyword-face.keyword-face1 .keyword-content{
+    opacity: 1;
+}
+
+.keyword-container .keyword-card .keyword-face.keyword-face1 .keyword-content img{
+    max-width: 100px;
+}
+
+.keyword-container .keyword-card .keyword-face.keyword-face1 .keyword-content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: var(--White);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.keyword-container .keyword-card .keyword-face.keyword-face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+    border-radius: 0 0 10px 10px ;
+}
+
+.keyword-container .keyword-card:hover .keyword-face.keyword-face2{
+    transform: translateY(0);
+}
+
+.keyword-container .keyword-card .keyword-face.keyword-face2 .keyword-content p{
+    color: var(--LightMerlot);
+    margin: 0;
+    padding: 0;
+}
+
 
 
 
