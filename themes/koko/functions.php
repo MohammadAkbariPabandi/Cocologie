@@ -67,3 +67,25 @@ function custom_post_type_Games() {
 
 }
 add_action( 'init', 'custom_post_type_Games', 0 );
+
+
+/**
+ * Safely get ACF field from current post
+ */
+// function get_theme_field($field_name, $default = '', $post_id = null) {
+//     $value = get_field($field_name, $post_id);
+//     return (!empty($value)) ? $value : $default;
+// }
+function get_theme_field($field_name, $default = '', $post_id = null) {
+    if (!$post_id) {
+        $post_id = get_the_ID();
+    }
+    $value = get_field($field_name, $post_id);
+    if (empty($value)) {
+        // For debugging - remove in production
+        error_log("ACF Field '{$field_name}' not found for post {$post_id}");
+        return $default;
+    }
+    return $value;
+}
+?>
