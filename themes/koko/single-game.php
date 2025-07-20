@@ -134,6 +134,15 @@ get_header();
             </div>
         </div>
 
+        <div class="container mb-5">
+            <?php
+            // Load the comments template
+            if (comments_open() || get_comments_number()) {
+                comments_template();
+            }
+            ?>            
+        </div>
+
         
         
     </article>

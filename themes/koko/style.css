@@ -46,6 +46,16 @@ body{
     display: none;
 }
 
+
+.comment{
+  margin-bottom: 30px;
+  padding: 30px;
+  border: 2px solid var(--LightMerlot);
+  border-radius: 10px;
+}
+.comment-nummber{
+  font-size: 22px;
+}
   
 /* button ---------------------------------------------------------------------- */
 

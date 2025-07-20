@@ -88,4 +88,5 @@ function get_theme_field($field_name, $default = '', $post_id = null) {
     }
     return $value;
 }
+
 ?>
