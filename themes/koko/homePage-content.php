@@ -8,7 +8,7 @@
 <section class="container herosection">
     <div class="row">
         <div class="col-md-6 herosection-right">
-            <p></p>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/logo01.png" alt="Kokology Logo">
             <h1 class="mb-5 base" style="color: #091972;">
                 <?php echo get_theme_field('homepagetitle'); ?>
             <span><h1 class="base" style="color: #d5752c;" ><?php echo get_theme_field('homepagesubtitle'); ?></h1></span> </h1>

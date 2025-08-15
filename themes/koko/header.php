@@ -17,9 +17,9 @@
   <div class="container header-content">
     <!-- Logo + Title -->
     <div class="logo-title">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logo01.png" alt="Kokology Logo">
+      <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/logo01.png" alt="Kokology Logo"> -->
       <div class="site-title">
-        <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+        <a class="base" href="#">کوکولوژی چیست؟</a>
       </div>
     </div>
 
@@ -31,7 +31,7 @@
       <ul>
         <li><a class="base" href="<?php echo esc_url(home_url('/')); ?>">خانه</a></li>
         <li><a class="base" href="<?php echo get_permalink( get_page_by_title('play') ); ?>">بازی ها</a></li>
-        <li><a class="base" href="#">پکیج ها</a></li>
+        <li><a class="base" href="#">سوالات متداول</a></li>
         <li><a class="base" href="<?php echo get_permalink( get_page_by_title('about-us') ); ?>">درباره ما</a></li>
         <li><a class="base" href="<?php echo get_permalink( get_page_by_title('contact-us') ); ?>">ارتباط با ما</a></li>
       </ul>
@@ -53,7 +53,7 @@
   <div class="logo-title mt-5">
       <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Kokology Logo">
       <div class="site-title">
-        <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+        <a class="base" href="#">کوکولوژی چیست؟</a>
       </div>
     </div>
 </div>
