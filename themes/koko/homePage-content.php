@@ -37,17 +37,46 @@
     </div>
     <div class="GameSlider">
         <div class="GameSlider-track">
-            <div class="GameSlider-card">Card 1</div>
-            <div class="GameSlider-card">Card 2</div>
-            <div class="GameSlider-card">Card 3</div>
-            <div class="GameSlider-card">Card 4</div>
-            <div class="GameSlider-card">Card 5</div>
-            <!-- Repeat cards for seamless loop -->
-            <div class="GameSlider-card">Card 1</div>
-            <div class="GameSlider-card">Card 2</div>
-            <div class="GameSlider-card">Card 3</div>
-            <div class="GameSlider-card">Card 4</div>
-            <div class="GameSlider-card">Card 5</div>
+            <?php
+            // Query Game posts
+            $plays_query = new WP_Query(array(
+                'post_type' => 'game', // Change to your custom post type if different
+                'posts_per_page' => -1, // Show all games, or set a number like 6
+                'orderby' => 'date',
+                'order' => 'DESC'
+            ));
+            if ($plays_query->have_posts()) : ?>
+            <?php  for ($i = 0; $i < 3; $i++) {
+                     while ($plays_query->have_posts()) : $plays_query->the_post(); ?>
+                        <a href="<?php the_permalink(); ?>" class="base">
+                            <div class="GameSlider-card">
+                                <?php 
+                                    $hero_image = get_field('heroimage');
+                                    if ($hero_image) {
+                                        echo '<img src="' . esc_url($hero_image['url']) . '" alt="' . esc_attr($hero_image['alt']) . '">';
+                                    } else {
+                                        // Fallback image options:
+                                        echo '<img src="' . get_template_directory_uri() . '/images/default.jpg" alt="Default hero image">';
+                                        // OR use a placeholder service
+                                        // echo '<img src="https://via.placeholder.com/1200x600" alt="Placeholder image">';
+                                    }
+                                ?>                       
+                                <div class="kokologyGameCard__content">
+                                    <h3 class="base kokologyGameCard__title"><?php the_title(); ?></h3>
+                                    <?php $summary = get_field('summaryPlay'); ?>
+                                    <?php if ($summary) : ?>
+                                        <p class="base kokologyGameCard__summary"><?php echo esc_html($summary); ?></p>
+                                    <?php endif; ?>
+
+                                </div>
+                            </div>
+                        </a>
+                    <?php endwhile; ?>
+                <?php } ?>
+                <?php wp_reset_postdata(); ?>
+            <?php else : ?>
+                <p class="plays-not-found">No Game found.</p>
+            <?php endif; ?>
         </div>
     </div>
 

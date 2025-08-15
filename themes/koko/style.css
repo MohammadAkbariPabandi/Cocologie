@@ -437,6 +437,7 @@ header a:hover {
 }
 
 .GameSlider-card {
+  position: relative;
   flex: 0 0 auto;
   width: 400px;
   height: 350px;
@@ -449,6 +450,41 @@ header a:hover {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
+
+.GameSlider-card img{
+  width: inherit;
+  height: inherit;
+}
+
+.kokologyGameCard__content{
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-wrap: initial;
+  text-align: justify;
+  padding: 30px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  visibility: hidden;
+  background-color: rgba(0,0,0,0.60);
+}
+
+.kokologyGameCard__title{
+  color: white;
+}
+
+.kokologyGameCard__summary{
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.GameSlider-card:hover .kokologyGameCard__content{
+  visibility: visible;
+}
+
 
 @keyframes scroll {
   from {
