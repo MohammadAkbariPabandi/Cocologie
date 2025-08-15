@@ -417,7 +417,7 @@ header a:hover {
 /* kokologyGameCard ----------------------------------------------------------------------------- kokologyGameCard  */
 
 .kokologyGameCard{
-  margin-top: 80px;
+  margin-top: 120px;
 }
 .GameSlider {
   overflow: hidden;
@@ -472,11 +472,11 @@ header a:hover {
 }
 
 .kokologyGameCard__title{
-  color: white;
+  color: rgb(249 249 249 / 75%);
 }
 
 .kokologyGameCard__summary{
-  color: white;
+  color: rgb(249 249 249 / 75%);
   font-weight: normal;
   font-size: 16px;
 }
@@ -495,14 +495,32 @@ header a:hover {
   }
 }
 
+/* Panel ------------------------------------------------------------------------------------ Panel  */
+.Panel{
+  margin-top: 120px;
+  background-color: var(--Zodiac);
+  height: 300px;
+}
 
+.Panel-content{
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.Panel-content-button{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
 /* keyworde section ---------------------------------------------------------------------------keyworde section  */
 
 
 .keywordeSection{
-  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .keyword-container{
@@ -584,9 +602,6 @@ header a:hover {
 
 
 /* post card  ----------------------------------------------------------------------------- post card  */
-.kokoGames{
-  padding-block: 120px;
-}
 
 .kokoGames-header{
   margin-block: 50px;
@@ -607,7 +622,6 @@ header a:hover {
   background-color: #005f8d;
 }
 
-/* Hover effect */
 .post-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
@@ -618,7 +632,6 @@ header a:hover {
 }
      
 .kokoGames-section {
-  padding-block: 120px;
   text-align: center;
 }
 
