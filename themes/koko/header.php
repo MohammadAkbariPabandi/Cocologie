@@ -30,6 +30,7 @@
     <nav class="desktop-menu">
       <ul>
         <li><a class="base" href="<?php echo esc_url(home_url('/')); ?>">خانه</a></li>
+         <li><a class="base" href="#">سفارش سازمانی</a></li>
         <li><a class="base" href="<?php echo get_permalink( get_page_by_title('play') ); ?>">بازی ها</a></li>
         <li><a class="base" href="#">سوالات متداول</a></li>
         <li><a class="base" href="<?php echo get_permalink( get_page_by_title('about-us') ); ?>">درباره ما</a></li>

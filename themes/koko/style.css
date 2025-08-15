@@ -322,7 +322,7 @@ header a:hover {
 }
 
 .herosection-right h4{
-  padding-left: 200px;
+  padding-left: 60px;
   color: var(--LightMerlot);
   text-align: justify;
 }
@@ -413,6 +413,53 @@ header a:hover {
     width: 100%;
   }
 }
+
+/* kokologyGameCard ----------------------------------------------------------------------------- kokologyGameCard  */
+
+.kokologyGameCard{
+  margin-top: 80px;
+}
+.GameSlider {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.GameSlider-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  /* margin-right: -70vw; */
+}
+
+.GameSlider:hover .GameSlider-track {
+  animation-play-state: paused;
+}
+
+.GameSlider-card {
+  flex: 0 0 auto;
+  width: 400px;
+  height: 350px;
+  margin: 0 10px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(150%);
+  }
+}
+
+
 
 
 /* keyworde section ---------------------------------------------------------------------------keyworde section  */

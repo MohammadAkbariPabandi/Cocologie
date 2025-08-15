@@ -9,15 +9,15 @@
     <div class="row">
         <div class="col-md-6 herosection-right">
             <img src="<?php echo get_template_directory_uri(); ?>/images/logo01.png" alt="Kokology Logo">
-            <h1 class="mb-5 base" style="color: #091972;">
+            <h1 class="mb-5 base" style="color: #04446a;">
                 <?php echo get_theme_field('homepagetitle'); ?>
             <span><h1 class="base" style="color: #d5752c;" ><?php echo get_theme_field('homepagesubtitle'); ?></h1></span> </h1>
             <h4 class="base">
                 <?php echo get_theme_field('herosummary'); ?> 
             </h4>
-            <div class="mt-4 d-flex gap-5">
+            <div class="mt-5 d-flex gap-5">
                 <a class="PillButton ZodiacPillButton" href="<?php echo get_permalink( get_page_by_title('contact-us') ); ?>">درخواست ثبت نام</a>
-                <a class="PillButton ToryPillButton" href="#">مشاهده پکیج</a>
+                <a class="PillButton ToryPillButton" href="#">درخواست مشاوره</a>
             </div>
 
         </div>
@@ -25,6 +25,32 @@
            <img class="scale-on-scroll" src="<?php echo get_template_directory_uri(); ?>/images/heroLeft.jpg" alt="kokology">
         </div>
     </div>
+</section>
+
+
+<section class="container-fuit kokologyGameCard">
+    <div class="container mb-5">
+        <h2 class="mb-3 base" style="color: #04446a;">دنیای بازی‌های کوکولوژی</h2>
+        <h4 class="base" style="color: #70798B;">
+            هر بازی داستان و سبک خاص خودش رو داره، ببین کدوم رو بیشتر دوست داری. از بازی‌های ساده و سرگرم‌کننده تا چالش‌های نفس‌گیر، همه اینجاست!
+        </h2>
+    </div>
+    <div class="GameSlider">
+        <div class="GameSlider-track">
+            <div class="GameSlider-card">Card 1</div>
+            <div class="GameSlider-card">Card 2</div>
+            <div class="GameSlider-card">Card 3</div>
+            <div class="GameSlider-card">Card 4</div>
+            <div class="GameSlider-card">Card 5</div>
+            <!-- Repeat cards for seamless loop -->
+            <div class="GameSlider-card">Card 1</div>
+            <div class="GameSlider-card">Card 2</div>
+            <div class="GameSlider-card">Card 3</div>
+            <div class="GameSlider-card">Card 4</div>
+            <div class="GameSlider-card">Card 5</div>
+        </div>
+    </div>
+
 </section>
 
 <section class="container keywordeSection">  
